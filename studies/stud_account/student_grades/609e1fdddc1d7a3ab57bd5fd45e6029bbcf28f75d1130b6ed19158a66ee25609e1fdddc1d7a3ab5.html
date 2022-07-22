@@ -1,15 +1,425 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <style type="text/css">
+        .header {
+            font-size: 20pt;
+            margin: 15pt 0;
+            font-weight: bold;
+        }
+
+        .sub-header {
+            font-size: 15pt;
+            margin: 15pt 0 5pt 0;
+            font-weight: bold;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 10pt;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 1pt 10pt;
+        }
+
+        th {
+            background: #d3d3d3;
+        }
+
+        .master-header-row {
+            text-align: left;
+        }
+
+        .no-grade,
+        .bad-grade {
+            font-weight: bold;
+        }
+
+        .bad-grade {
+            color: red;
+        }
+
+        .no-grade {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
+    <button id="topdf" onclick="document.forms[&#39;get_grades&#39;].submit();" style="margin-top: 10pt">Сохранить
+        оценки в файл PDF</button>
+    <form
+        action="https://www.nstu.ru/education/stud_account/student_grades/609e1fdddc1d7a3ab57bd5fd45e6029bbcf28f75d1130b6ed19158a66ee25609e1fdddc1d7a3ab5"
+        name="get_grades" method="GET">
+        <input type="hidden" name="print_grades" value="1">
+    </form>
+    <div>
+        <div class="header">Борисова Виктория Александровна, ПМ-11 (учится)</div>
+        <div class="sub-header">Оценки за контрольные недели в текущем семестре</div>
+        <table>
+            <tbody>
+                <tr>
+                    <th>№</th>
+                    <th>Дисциплина</th>
+                    <th>Семестр</th>
+                    <th>Неделя</th>
+                    <th>Оценка</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Алгебра и геометрия</td>
+                    <td>2</td>
+                    <td>7-ая</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Дискретная математика</td>
+                    <td>2</td>
+                    <td>7-ая</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Физическая культура и спорт</td>
+                    <td>2</td>
+                    <td>7-ая</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Структуры данных и алгоритмы</td>
+                    <td>2</td>
+                    <td>7-ая</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Основы проектной деятельности</td>
+                    <td>2</td>
+                    <td>7-ая</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Основы личностной и коммуникативной культуры</td>
+                    <td>2</td>
+                    <td>7-ая</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Математический анализ</td>
+                    <td>2</td>
+                    <td>7-ая</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Культура научной и деловой речи</td>
+                    <td>2</td>
+                    <td>7-ая</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Культура и личность</td>
+                    <td>2</td>
+                    <td>7-ая</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Иностранный язык</td>
+                    <td>2</td>
+                    <td>7-ая</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Алгебра и геометрия</td>
+                    <td>2</td>
+                    <td>12-ая</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Структуры данных и алгоритмы</td>
+                    <td>2</td>
+                    <td>12-ая</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Основы проектной деятельности</td>
+                    <td>2</td>
+                    <td>12-ая</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Основы личностной и коммуникативной культуры</td>
+                    <td>2</td>
+                    <td>12-ая</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Физическая культура и спорт</td>
+                    <td>2</td>
+                    <td>12-ая</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Культура научной и деловой речи</td>
+                    <td>2</td>
+                    <td>12-ая</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Культура и личность</td>
+                    <td>2</td>
+                    <td>12-ая</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Иностранный язык</td>
+                    <td>2</td>
+                    <td>12-ая</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Дискретная математика</td>
+                    <td>2</td>
+                    <td>12-ая</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Математический анализ</td>
+                    <td>2</td>
+                    <td>12-ая</td>
+                    <td></td>
+                </tr>
 
+            </tbody>
+        </table>
+        <div class="sub-header">Результаты сессии</div>
+        <div>
+            <span class="bad-grade">Н/Д</span> - не допущен, <span class="bad-grade">Н/Я</span> - не явился, <span
+                class="bad-grade">Н/З</span> - не зачтено.
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <th class="master-header-row" colspan="6">Семестр 2</th>
+                </tr>
+                <tr>
+                    <th>№</th>
+                    <th>Дисциплина</th>
+                    <th>Дата</th>
+                    <th>Баллы</th>
+                    <th>Оценка 5-балльная</th>
+                    <th>Оценка ECTS</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="1">1</td>
+                    <td rowspan="1">Алгебра и геометрия</td>
+                    <td>16.06.22</td>
+                    <td colspan="3" class="no-grade bad-grade">Н/Д</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="1">2</td>
+                    <td rowspan="1">Дискретная математика</td>
+                    <td>09.06.22</td>
+                    <td colspan="3" class="no-grade bad-grade">Н/Я</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="1">3</td>
+                    <td rowspan="1">Иностранный язык</td>
+                    <td>06.06.22</td>
+                    <td>52</td>
+                    <td>Зач</td>
+                    <td>E</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="1">4</td>
+                    <td rowspan="1">Математический анализ</td>
+                    <td>23.06.22</td>
+                    <td colspan="3" class="no-grade bad-grade">Н/Д</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="1">5</td>
+                    <td rowspan="1">Основы личностной и коммуникативной культуры</td>
+                    <td>07.06.22</td>
+                    <td>52</td>
+                    <td>Зач</td>
+                    <td>E</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="1">6</td>
+                    <td rowspan="1">Основы проектной деятельности</td>
+                    <td>11.06.22</td>
+                    <td>60</td>
+                    <td>Зач</td>
+                    <td>D-</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="1">7</td>
+                    <td rowspan="1">Структуры данных и алгоритмы</td>
+                    <td>30.06.22</td>
+                    <td colspan="3" class="no-grade bad-grade">Н/Я</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="1">8</td>
+                    <td rowspan="1">Физическая культура и спорт</td>
+                    <td>07.06.22</td>
+                    <td class="bad-grade">0</td>
+                    <td>Зач</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="master-header-row" colspan="6">Семестр 1</th>
+                </tr>
+                <tr>
+                    <th>№</th>
+                    <th>Дисциплина</th>
+                    <th>Дата</th>
+                    <th>Баллы</th>
+                    <th>Оценка 5-балльная</th>
+                    <th>Оценка ECTS</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="3">1</td>
+                    <td rowspan="3">Алгебра и геометрия</td>
+                    <td>11.01.22</td>
+                    <td colspan="3" class="no-grade bad-grade">Н/Д</td>
+                </tr>
+
+                <tr>
+                    <td>24.02.22</td>
+                    <td class="bad-grade">38</td>
+                    <td class="bad-grade">2</td>
+                    <td class="bad-grade">FX</td>
+                </tr>
+
+                <tr>
+                    <td>03.03.22</td>
+                    <td>54</td>
+                    <td>3</td>
+                    <td>E</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="1">2</td>
+                    <td rowspan="1">Дискретная математика</td>
+                    <td>22.01.22</td>
+                    <td colspan="3" class="no-grade bad-grade">Н/Я</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="1">3</td>
+                    <td rowspan="1">История (история России, всеобщая история)</td>
+                    <td>18.01.22</td>
+                    <td>64</td>
+                    <td>3</td>
+                    <td>D</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="1">4</td>
+                    <td rowspan="1">Математический анализ</td>
+                    <td>15.01.22</td>
+                    <td colspan="3" class="no-grade bad-grade">Н/Я</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">5</td>
+                    <td rowspan="2">Основы программирования</td>
+                    <td>29.12.21</td>
+                    <td colspan="3" class="no-grade bad-grade">Н/Я</td>
+                </tr>
+
+                <tr>
+                    <td>28.02.22</td>
+                    <td>57</td>
+                    <td>Зач</td>
+                    <td>E</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="1">6</td>
+                    <td rowspan="1">Основы проектной деятельности</td>
+                    <td>28.12.21</td>
+                    <td>80</td>
+                    <td>Зач</td>
+                    <td>B-</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="1">7</td>
+                    <td rowspan="1">Физическая культура и спорт</td>
+                    <td>28.12.21</td>
+                    <td class="bad-grade">0</td>
+                    <td>Зач</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="sub-header">Приказы деканата</div>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Тип приказа</th>
+                    <th>Текст приказа</th>
+                    <th>Номер и дата регистрации приказа</th>
+                </tr>
+                <tr>
+                    <td>Продление сессии</td>
+                    <td>Нижеперечисленным студентам продлить сессию 1 семестра с 07.02.2022г. до 21.02.2022г. по
+                        медицинским показаниям</td>
+                    <td>5026/2 от 28.12.21</td>
+                </tr>
+                <tr>
+                    <td>Распределение зачисленных по группам</td>
+                    <td>Следующих студентов, зачисленных на первый курс на очную форму обучения, по направлению 01.03.02
+                        Прикладная математика и информатика (высшее образование - бакалавриат), распределить в группы и
+                        присвоить шифры, установить профиль (направленность) образовательной программы «Компьютерное
+                        моделирование и информационные технологии»</td>
+                    <td>3278/2 от 30.08.21</td>
+                </tr>
+                <tr>
+                    <td>Зачисление на 1 курс</td>
+                    <td>В соответствии с решением приемной комиссии НГТУ, протокол №3 от 17.08.2021 г., зачислить с
+                        01.09.2021 г. в состав студентов первого курса очной формы обучения для обучения на контрактной
+                        основе (с оплатой стоимости обучения физическими и (или) юридическими лицами) по образовательной
+                        программе высшего образования - программе бакалавриата 01.03.02 Прикладная математика и
+                        информатика, профиль (направленность) образовательной программы «Компьютерное моделирование и
+                        информационные технологии», следующих абитуриентов</td>
+                    <td>3013/2 от 17.08.21</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
