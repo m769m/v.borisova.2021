@@ -52,11 +52,10 @@
 </head>
 
 <body>
-    <button id="topdf" onclick="document.forms[&#39;get_grades&#39;].submit();" style="margin-top: 10pt">Сохранить
-        оценки в файл PDF</button>
-    <form
-        action="https://http://www.ciu-nstu.ru/studies/stud_account/student_grades/grades_borisova_viktoriya_aleksandrovna.pdf"
-        name="get_grades" method="GET">
+    <button id="topdf" style="margin-top: 10pt"><a href="grades_borisova_viktoriya_aleksandrovna.pdf"
+            download="grades_borisova_viktoriya_aleksandrovna">Сохранить
+            оценки в файл PDF</a></button>
+    <form>
         <input type="hidden" name="print_grades" value="1">
     </form>
     <div>
